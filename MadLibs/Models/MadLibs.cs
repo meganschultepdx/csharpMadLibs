@@ -8,6 +8,7 @@ namespace MadLibsStory.Models
     private string _anotherSillyName;
     private string _color;
     private string _adjective;
+    private string _verb;
 
     //silly name
     public string GetSillyName()
@@ -73,6 +74,17 @@ namespace MadLibsStory.Models
     {
       _adjective = newAdjective;
     }
+
+    public string GetVerb()
+    {
+      return _verb;
+    }
+
+    public void SetVerb(string newVerb)
+    {
+      _verb = newVerb;
+    }
+    
   }
 }      // private string _sillyName;
       // public string SillyName { get => _sillyName; set => _sillyName;}
