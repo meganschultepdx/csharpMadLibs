@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using MadLibs.Models;
+using MadLibsStory.Models;
 
-namespace MadLibs.Controllers
+namespace MadLibsStory.Controllers
 {
   public class HomeController : Controller
   {
@@ -10,15 +10,15 @@ namespace MadLibs.Controllers
     public ActionResult Form() { return View(); }
 
     [Route("/madLibs")]
-    public ActionResult MadLibs(string sillyName, string unrealisticProfession, string country, string anotherSillyName, string color, string adjective)
+    public ActionResult Story(string sillyName, string unrealisticProfession, string country, string anotherSillyName, string color, string adjective)
     {
       MadLibs myMadLibs = new MadLibs();
-      myMadLibs.SillyName(sillyName);
-      myMadLibs.UnrealisticProfession(unrealisticProfession);
-      myMadLibs.Country(country);
-      myMadLibs.AnotherSillyName(anotherSillyName);
-      myMadLibs.Color(color);
-      myMadLibs.Adjective(adjective);
+      myMadLibs.SetSillyName(sillyName);
+      myMadLibs.SetUnrealisticProfession(unrealisticProfession);
+      myMadLibs.SetCountry(country);
+      myMadLibs.SetAnotherSillyName(anotherSillyName);
+      myMadLibs.SetColor(color);
+      myMadLibs.SetAdjective(adjective);
       return View(myMadLibs);
     }
 

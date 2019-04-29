@@ -2,23 +2,30 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Create a Custom Postcard!</title>
+    <title>Fill in the MadLibs fields!</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>Fill in your name and your friend's name to create your custom postcard!</h1>
-    <form action="/postcard" method="post">
-     <label for="sender">Sender's Name</label>
-     <input id="sender" name="sender" type="text">
+    <h1>Fill in the fields below to make a super fun MadLibs story!</h1>
 
-     <label for="recipient">Recipient's Name</label>
-     <input id="recipient" name="recipient" type="text">
+    <form action="/story" method="post">
+     <label for="sillyName">silly name</label>
+     <input id="sillyName" name="sillyName" type="text">
 
-     <label for="vacationLocation">Vacation Location</label>
-     <input id="vacationLocation" name="vacationLocation" type="text">
+     <label for="unrealisticProfession">unrealistic profession</label>
+     <input id="unrealisticProfession" name="unrealisticProfession" type="text">
 
-     <label for="souveniers">Souveniers</label>
-     <input id="souveniers" name="souveniers" type="text">
+     <label for="country">country</label>
+     <input id="country" name="country" type="text">
+
+     <label for="anotherSillyName">another silly name</label>
+     <input id="anotherSillyName" name="anotherSillyName" type="text">
+
+     <label for="color">color</label>
+     <input id="color" name="color" type="text">
+
+     <label for="adjective">adjective</label>
+     <input id="adjective" name="adjective" type="text">
 
      <button type="submit">Go!</button>
     </form>
